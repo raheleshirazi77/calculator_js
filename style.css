@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+body{
+   height: 100%;
+   background-image:url('./image/Picsart_23-12-26_17-10-49-053.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+ form{
+    background-color: blueviolet;
+    width: 20%;
+    height: 100% ato;
+    border-radius: 10px;
+    margin: 10% auto;
+}
+input[name="display"]{
+    background-color: rgb(202, 185, 255);
+    border: 0;
+    border-radius: 10px;
+    height: 40px;
+    text-align: right;
+    width: calc(100% - 30px);
+    margin: 6px;
+    padding: 0 10px;
+}
+input[type="button"]{
+    float: left;
+    width: calc(100% / 4 - 6.5px);
+    background-color: rgb(219, 201, 255);
+    outline: none;
+    border: 1px solid rgb(183, 162, 201) ;
+    border-radius: 8px;
+    height: 36px;
+    text-align: center;
+    margin: 0 0 5px 5px ;
+}
+/* I used this method so that one of our keys has a different color and size from the others */
+input[type="button"]:nth-last-of-type(1){
+    background-color: rgb(252, 255, 63);
+    border: 0;
+    width: calc(50% - 7px);
+}

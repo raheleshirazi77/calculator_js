@@ -1,0 +1,68 @@
+<!--
+*Starting a solo calculator project 
+*Producer: Rahela Shirazi 
+*Important point, please read (:
+*I made a calculator with html, css and javascript
+* because I like purple a lot, I made it purple
+* you have to like it and tell me how beautiful it is, you are unique.
+*email:rahele.shirazi77@gmail.com
+*adress github:raheleshirazi77
+-->
+
+<!-- start project -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc</title>
+    <!-- css link for styling -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- start project calc -->
+    <div class="container">
+        <div class="formCalc">
+            <!-- start calc -->
+            <form name="calc">
+                <!-- A space to display numbers and enter and calculate them -->
+                <!-- Our input must be disabled because the calculator does not have the ability to edit through the keyboard (onclick="data(this.value)")-->
+                <input type="text" disabled name="display" value="">
+                <!-- Making the keys of the first row of the calculator-->
+                <!-- js  --> <!-- When the AC function is clicked and called -->
+                <input type="button" value="AC" onclick="ac()">
+                <!-- js  --> <!-- When the AC function is clicked and called -->
+                <input type="button" value="C" onclick="c()">
+                <!-- js --> <!-- When this key is clicked, pass its value to this function -->
+                <input type="button" value="%" onclick="data(this.value)">
+                <input type="button" value="-" onclick="data(this.value)">
+                <!-- Making the keys of the second row of the calculator -->
+                <input type="button" value="9" onclick="data(this.value)">
+                <input type="button" value="8" onclick="data(this.value)">
+                <input type="button" value="7" onclick="data(this.value)">
+                <input type="button" value="*" onclick="data(this.value)">
+                <!-- Making the keys of the third row of the calculator -->
+                <input type="button" value="6" onclick="data(this.value)">
+                <input type="button" value="5" onclick="data(this.value)">
+                <input type="button" value="4" onclick="data(this.value)">
+                <input type="button" value="/" onclick="data(this.value)">
+                <!-- Making the keys of the fourth row of the calculator -->
+                <input type="button" value="3" onclick="data(this.value)">
+                <input type="button" value="2" onclick="data(this.value)">
+                <input type="button" value="1" onclick="data(this.value)">
+                <input type="button" value="+" onclick="data(this.value)">
+                <!-- Making the keys of the last row of the calculator -->
+                <input type="button" value="0" onclick="data(this.value)">
+                <input type="button" value="." onclick="data(this.value)">
+                <!-- js --><!-- When the equal function is clicked and called and mathematical calculations are performed -->
+                <input type="button" value="=" onclick="equal()">
+                <!-- We use this method to fix our keys being in the air and put them in their place -->
+                <!-- We solve this problem by using clear -->
+                <div style="clear: both;" ></div>
+            </form>
+        </div>
+    </div>
+    <!-- link js  -->
+    <script src="./script.js"></script>
+</body>
+</html>
